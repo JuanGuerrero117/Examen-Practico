@@ -1,0 +1,282 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<iostream>
+#include<string.h>
+#include<fstream>
+
+using namespace std;
+
+	void Insertar(*&arbol,valor);
+//	void Busqueda(int valor,Nodo *arbol);
+	
+	void escribir();
+	int VacioArbol();
+	
+	typedef struct arbol{
+		int totalizq;
+		Nodo *raiz;
+		int totalder;
+		char Nombre; 
+		char Nacionalidad;
+	}Arbol;
+	
+	
+	typedef struct nodo{
+		struct Nodo *izq;
+		char Nombre;
+		char Nacionalidad;
+		struct Nodo *padre;
+		struct Nodo *der;
+		int hijosizq;
+		int hijosder;
+	}PLATA;
+		
+		typedef struct nodo{
+		struct Nodo *izq;
+		char Nombre;
+		char Nacionalidad;
+		struct Nodo *padre;
+		struct Nodo *der;
+		int hijosizq;
+		int hijosder;
+	}ORO;
+	
+		typedef struct nodo{
+		struct Nodo *izq;
+		char Nombre;
+		char Nacionalidad;
+		struct Nodo *padre;
+		struct Nodo *der;
+		int hijosizq;
+		int hijosder;
+	}BRONCE;
+	
+	ORO* crearArbol(){
+		ORO *aux=(ORO*)malloc(sizeof(ORO));
+		aux->izq=0;
+		aux->der=0;
+		aux->padre=nullptr;
+	}
+	
+	PLATA* crearArbol(){
+		PLATA *aux=(PLATA*)malloc(sizeof(PLATA));
+		aux->izq=0;
+		aux->der=0;
+		aux->padre=nullptr;
+		return;
+	}
+	
+	BRONCE* crearArbol(){
+		BRONCE *aux=(BRONCE*)malloc(sizeof(BRONCE));
+		aux->izq=0;
+		aux->der=0;
+		aux->padre=nullptr;
+		return;
+	}
+	
+	ORO* crearNodo(char Nacionalidad, char Nombre){
+		ORO *aux=(ORO*)malloc(sizeof(ORO));
+		aux->	izq=nullptr;
+		aux->		der=nullptr;
+		aux->	padre=nullptr;
+		aux->hijosder=0;
+		aux->hijosizq=0;
+		for(i=0;i<50;i++){
+			if(datosolimp[i][2]=='oro' ){
+				aux->Nacionalidad=datosolimp[i][1];
+				aux->Nombre=datosolimp[i][3];
+				i=50;
+				datosolimp[i][2]=='oro1';
+		}
+	}
+		return aux;
+	}
+	
+	BRONCE* crearNodo(char Nacionalidad, char Nombre){
+		int i=0;
+		BRONCE *aux=(BRONCE*)malloc(sizeof(BRONCE));
+		aux->	izq=nullptr;
+		aux->		der=nullptr;
+		aux->	padre=nullptr;
+		aux->hijosder=0;
+		aux->hijosizq=0;
+		for(i=0;i<50;i++){
+			if(datosolimp[i][2]=='bronce'){
+				aux->Nacionalidad=datosolimp[i][1];
+				aux->Nombre=datosolimp[i][3];
+				i=50;
+				datosolimp[i][2]=='bronce1';
+		}
+	}
+		return aux;
+	}
+	
+	PLATA* crearNodo(char Nacionalidad, char Nombre){
+		PLATA *aux=(PLATA*)malloc(sizeof(PLATA));
+		aux->	izq=nullptr;
+		aux->		der=nullptr;
+		aux->	padre=nullptr;
+		aux->hijosder=0;
+		aux->hijosizq=0;
+		for(i=0;i<50;i++){
+			if(datosolimp[i][2]=='plata'){
+				aux->Nacionalidad=datosolimp[i][1];
+				aux->Nombre=datosolimp[i][3];
+				i=50;
+				datosolimp[i][2]=='plata1';
+		}
+	}
+		return aux;
+	}
+	
+	
+	
+int main()
+{
+	char datosolimp[50][3] = {{mexicano ,bronce,sofia},{mexicano bronce,sebastian},{mexicano ,bronce,mateo}.{mexicano ,plata,santiago},{mexicano ,plata,andrea},{mexicano ,bronce,rocio},{mexicano ,oro,diego},{mexicano ,oro,juan},{mexicano ,oro,jorge},{brazileno,bronce,lucas},{brazileno,plata,thiago},{brazileno,bronce,gabriela},{brazileno,bronce,rafael},{brazileno,plata,rodrigo},{brazileno,bronce,alejandra},{argentino,oro,cecilia},
+	{argentino,bronce,antonio},{argentino,oro,joaquin},{argentino,oro,lautaro},{argentino,plata,agustina},{argentino,bronce,josefa},{japones ,bronce,haruki},{japones ,oro,ema},{japones ,bronce,ichika},{japones ,oro,miku},{japones ,oro,riku},{japones ,oro,yotsuba},{aleman,oro,hanna},{aleman,bronce,anna},{aleman,plata,marie},{aleman,bronce,paul},{aleman,oro,leon},{estadounidense,bronce,greg},{estadounidense,bronce,william},{estadounidense,oro,oliver},
+	{estadounidense,bronce,noah},{estadounidense,oro,myriam},{estadounidense,plata,jacky},{estadounidense,plata,john},{estadounidense,bronce,olivia},{estadounidense,plata,tom},{estadounidense,bronce,james},{estadounidense,oro,isabella},{estadounidense,plata,henry},{frances,plata,jean},{frances,oro,remy},{frances,bronce,gerard},{frances,bronce,simon},{frances,oro,lucie},{frances,bronce,viccent}}
+	int a=0, b=0, c=0, d=0, e=0, f=0, g=0;
+	int mexico=0, brazil=0, argentina=0, japon=0, alemania=0, eu=0,francia=0;
+	
+	Insertar()
+	Busqueda()
+	for(int i=0, i<50;i++){
+		if(datosolimp[i][2]=='bronce' && datosolimp[i][i]=='mexicano')
+		mexico+2;
+		if(datosolimp[i][2]=='plata' && datosolimp[i][i]=='mexicano')
+		mexico+5;
+		if(datosolimp[i][2]=='oro' && datosolimp[i][i]=='mexicano')
+		mexico+10
+	}
+	for(int i=0, i<50;i++){
+		if(datosolimp[i][2]=='bronce' && datosolimp[i][i]=='brazileno')
+		brazil+2;
+		if(datosolimp[i][2]=='plata' && datosolimp[i][i]=='brazileno')
+		brazil+5;
+		if(datosolimp[i][2]=='oro' && datosolimp[i][i]=='brazileno')
+		brazil+10
+	}
+	for(int i=0, i<50;i++){
+		if(datosolimp[i][2]=='bronce' && datosolimp[i][i]=='argentino')
+		argentina+2;
+		if(datosolimp[i][2]=='plata' && datosolimp[i][i]=='argentino')
+		argentina+5;
+		if(datosolimp[i][2]=='oro' && datosolimp[i][i]=='argentino')
+		argentina+10
+	}
+	for(int i=0, i<50;i++){
+		if(datosolimp[i][2]=='bronce' && datosolimp[i][i]=='japones')
+		japon+2;
+		if(datosolimp[i][2]=='plata' && datosolimp[i][i]=='japones')
+		japon+5;
+		if(datosolimp[i][2]=='oro' && datosolimp[i][i]=='japones')
+		japon+10
+	}
+	for(int i=0, i<50;i++){
+		if(datosolimp[i][2]=='bronce' && datosolimp[i][i]=='aleman')
+		alemania+2;
+		if(datosolimp[i][2]=='plata' && datosolimp[i][i]=='aleman')
+		alemania+5;
+		if(datosolimp[i][2]=='oro' && datosolimp[i][i]=='aleman')
+		alemania+10
+	}
+	for(int i=0, i<50;i++){
+		if(datosolimp[i][2]=='bronce' && datosolimp[i][i]=='estadounidense')
+		eu+2;
+		if(datosolimp[i][2]=='plata' && datosolimp[i][i]=='estadounidense')
+		eu+5;
+		if(datosolimp[i][2]=='oro' && datosolimp[i][i]=='estadounidense')
+		eu+10
+	}
+	for(int i=0, i<50;i++){
+		if(datosolimp[i][2]=='bronce' && datosolimp[i][i]=='frances')
+		francia+2;
+		if(datosolimp[i][2]=='plata' && datosolimp[i][i]=='frances')
+		francia+5;
+		if(datosolimp[i][2]=='oro' && datosolimp[i][i]=='frances')
+		francia+10
+	}
+	
+	Imprimir()
+	
+	system("pause");
+	return 0;
+}
+
+	int VacioArbol(Arbol *a){
+		if(arbol->raiz == nullptr){
+			return 1;
+		}else
+			return 0;
+
+	}
+	
+	void Insertar(Arbol *a, ORO *n){
+		char valorRaiz=nullptr;
+		char valorNombre=nullptr;
+		antr
+		if(VacioArbol(a)){
+			a->raiz=n;
+		}else{
+			valorRaiz == arbol.Nacionalidad;
+			valorNombre==arbol.	Nombre;
+		}
+		if( < valorNombre && < valorRaiz){
+			Insertar(arbol->totalizq,valorNombre,valorRaiz,)
+		}else
+			Insertar(arbol->totalder,valorNombre,valorRaiz);
+			
+	}
+
+	void Busqueda(){
+		if(arbol == nullptr)
+			return false;
+		else if (val b == arbol *dato)
+			return;
+	}
+	
+	void Imprimir(Nodo *arbol){
+		if(arbol == nullptr)
+			return;
+		else{printf(" &char", arbol *Nombre);
+			escribir();
+		}
+	}
+	
+	void escribir(char datosolimp,a,b,c,d,e,f,mexico,brazil,argentina,japon,alemanis,eu,francia){
+		int u=0;
+		ofstream archivo;
+		char datosolimp[][];
+		
+		arhivo.open("prueba.txt",ios::out);
+		
+		if(archivo.fail()){
+			printf("\nNo se pudo abrir el archivo");
+			return;
+		}else
+		printf("\nEl archivo fue creado correctamente");
+		
+		for(u=0;u<50;u++){
+			archivo=="\n%c",datosolimp[u][1];
+			archivo=="%c,",datosolimp[i][2];
+			archivo=="\nnombres:";
+			archivo==" %c,",datos[i][3];
+		}
+		archivo=="\t\n%d",a;
+		archivo=="\t\n%d",b;
+		archivo=="\t\n%d",c;
+		archivo=="\t\n%d",d;
+		archivo=="\t\n%d",e;
+		archivo=="\t\n%d",f;
+		archivo=="\t\n%d",g;
+		archivo=="\n17 Oro\t12 Plata\t21Bronce";
+		archivo=="\nMexico obtuvo",mexico;
+		archivo=="\nBrazil obtuvo",brazil;
+		archivo=="\nArgentina obtuvo",argentina;
+		archivo=="\nJapon obtuvo",japon;
+		archivo=="\nAlemania obtuvo",alemania;
+		archivo=="\nE.u obtuvo",eu;
+		archivo=="\nFrancia obtuvo",francia;
+		archivo.close();
+	}
