@@ -1,0 +1,20 @@
+mexicano 		9 Atletas  bronce bronce bronce plata plata bronce oro oro oro	[sofia sebastian mateo santiago andrea rocio, diego, juan,jorge]
+brazileño		6 Atletas bronce plata bronce bronce plata bronce plata	[Lucas thiago Gabriela Rafael Rodrigo Alejandra]
+Argentino		6 Atletas oro bronce oro oro plata bronce	
+[Agustina josefa cecilia antonio joaquin lautaro]
+japones 		6 Atletas bronce oro bronce oro oro oro	
+[haruki ema ichika miku riku yotsuba]
+aleman			5 Atletas oro bronce plata bronce oro	
+[Hanna Anna Maire Paul Leon]
+estadounidense		12 Atletas bronce bronce oro bronce oro plata plata bronce plata bronce oro plata 
+[greg william Oliver Noah Myriam Jacky John Olivia Tom James Isabella Henry]
+frances			6 Atletas plata oro bronce bronce oro bronce [jean remy gerard simon lucie vicent]
+
+				17 oro 12plata 21bronce
+Mexico obtuvo 	48 puntos
+Brazil		23 puntos
+Argentina 	39 puntos
+Japon		44 puntos
+Alemania	29 puntos
+E.U		60 puntos
+Francia		31 puntos
